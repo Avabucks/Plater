@@ -1,0 +1,92 @@
+.fade-in{-webkit-animation:fade-in .3s linear both;animation:fade-in .3s linear both}
+@-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+
+.fade-in2{-webkit-animation:fade-in .2s linear both;animation:fade-in .2s linear both}
+@-webkit-keyframes fade-in{0%{opacity:.4}100%{opacity:1}}@keyframes fade-in{0%{opacity:.4}100%{opacity:1}}
+
+.fade-out{-webkit-animation:fade-out .3s linear both;animation:fade-out .3s linear both}
+@-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}@keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+
+.ping{-webkit-animation:ping .5s ease-in-out alternate infinite both;animation:ping .5s ease-in-out alternate infinite both}
+@-webkit-keyframes ping{0%{-webkit-transform:translateY(-15px);transform:translateY(-15px);opacity:.9}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+        @keyframes ping{0%{-webkit-transform:translateY(-15px);transform:translateY(-15px);opacity:.9}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+.slide-in-right-Gallery{-webkit-animation:slide-in-right-Gallery .3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-right-Gallery .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-right-Calendar{0%{-webkit-transform:translateX(150px);transform:translateX(150px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+        @keyframes slide-in-right-Calendar{0%{-webkit-transform:translateX(150px);transform:translateX(150px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.slide-in-left-Gallery{-webkit-animation:slide-in-left-Gallery .3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-left-Gallery .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-in-left-Calendar{0%{-webkit-transform:translateX(-150px);transform:translateX(-150px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+        @keyframes slide-in-left-Calendar{0%{-webkit-transform:translateX(-150px);transform:translateX(-150px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.scale-in-ver-top{-webkit-animation:scale-in-ver-top .3s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-top .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:0}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}
+        @keyframes scale-in-ver-top{0%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:0}100%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}}
+
+.scale-in-ver-top-reverse{-webkit-animation:scale-in-ver-top-reverse .3s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-ver-top-reverse .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes scale-in-ver-top-reverse{0%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:0}}
+        @keyframes scale-in-ver-top-reverse{0%{-webkit-transform:scaleY(1);transform:scaleY(1);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:1}100%{-webkit-transform:scaleY(0);transform:scaleY(0);-webkit-transform-origin:100% 0;transform-origin:100% 0;opacity:0}}
+
+.scale-up-center{-webkit-animation:scale-up-center .3s cubic-bezier(.23,1.000,.32,1.000) both;animation:scale-up-center .3s cubic-bezier(.23,1.000,.32,1.000) both}
+@-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+.scale-up-center-reverse{-webkit-animation:scale-up-center-reverse .3s cubic-bezier(.23,1.000,.32,1.000) both;animation:scale-up-center-reverse .3s cubic-bezier(.23,1.000,.32,1.000) both}
+@-webkit-keyframes scale-up-center-reverse{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(.5);transform:scale(.5)}}@keyframes scale-up-center-reverse{0%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(.5);transform:scale(.5)}}
+
+.slide-top{-webkit-animation:slide-top .3s cubic-bezier(.25,.46,.45,.94) both;animation:slide-top .3s cubic-bezier(.25,.46,.45,.94) both}
+@-webkit-keyframes slide-top{0%{-webkit-transform:translateY(100px);transform:translateY(100px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes slide-top{0%{-webkit-transform:translateY(100px);transform:translateY(100px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}
+
+.blur-in{-webkit-animation:blur-in .25s ease-in-out both;animation:blur-in .25s ease-in-out both}
+@-webkit-keyframes blur-in{0%{filter: blur(6px)}100%{filter: blur(0)}}@keyframes blur-in{0%{filter: blur(6px)}100%{filter: blur(0)}}
+
+.cls-3 {
+  stroke: #fa8400;
+  stroke-width:2;
+  animation: dash 2s cubic-bezier(.0,-0.04,.32,.7) forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 50;
+    fill: transparent;
+  }
+  50% {
+    stroke-dasharray: 200;
+    fill: transparent;
+    stroke-width:2;
+  }
+  100% {
+    fill: #fa8400;
+    stroke-width: 0;
+  }
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #676A6F;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #676A6F transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

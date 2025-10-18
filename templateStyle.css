@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+html {scroll-behavior: smooth;}
+body {background-color: var(--primary); margin: 0; font-family: 'Inter', Arial, sans-serif; outline: none;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-tap-highlight-color: transparent;outline: none;-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-tap-highlight-color: transparent; overflow: hidden;}
+*:focus {
+    outline-width: 0;
+}
+
+    :root {
+      --primary: rgb(5, 10, 18);
+      --secondary: rgb(251, 133, 0);
+      --secondary_opacity: rgb(251, 133, 0, .5);
+      --white: #f1f1f1;
+      --white_board: #ffffff;
+      --black_board: rgb(70, 70, 70);
+    }
+
+    .classOmbra {
+      -webkit-box-shadow: 0px 1px 5px 1px rgb(28, 28, 28, .18);
+      -moz-box-shadow: 0px 1px 5px 1px rgb(28, 28, 28, .18);
+      -o-box-shadow: 0px 1px 5px 1px rgb(28, 28, 28, .18);
+      box-shadow: 0px 1px 5px 1px rgb(28, 28, 28, .18);
+    }
+
+  #menuPc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    right:0;
+    margin-right: 30;
+    top: 0;
+    display: block;
+  }
+
+  li {
+    float: left;
+  }
+
+  .menuLi {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10;
+    margin-top: 15px;
+    font-size: 14;
+    padding: 5 20 5 20;
+    border-radius: 6px;
+    }
+
+    .buttonMaterial {
+      outline: none;
+      cursor: pointer;
+      transition: .3s background-color;
+      user-select: none;
+      border: 1px solid rgb(0, 0, 0, 0);
+      letter-spacing: .3px;
+    }
+    .buttonMaterial:hover {
+      background-color: rgba(150, 150, 150, .1) !important;
+      border: 1px solid rgb(0, 0, 0, 0) !important;
+    }
+    .buttonMaterial:active {
+      background-color: rgba(150, 150, 150, .2) !important;
+      border: 1px solid rgb(0, 0, 0, 0) !important;
+    }
+
+  #header {height: 60;}
+  #titolo {margin-top: 5;}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50, .5);
+    border-radius: 50px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(50, 50, 50, .7);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }

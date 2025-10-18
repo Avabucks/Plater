@@ -1,0 +1,562 @@
+.openProprieties {
+   background-color: var(--primary);
+   cursor: pointer;
+   transition: .3s;
+}
+
+.popup {
+   background-color: var(--primary);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 20px;
+   animation: .3s cubic-bezier(.175,.885,.32,1.275) 0s 1 popupAnim;
+}
+
+.invisible {
+  display: none;
+}
+
+@keyframes popupAnim {
+    0% {transform: translate(-50%, -50%) scale(.8); opacity: .6;}
+    100% {transform: translate(-50%, -50%) scale(1); opacity: 1;}
+}
+
+.popupFull {
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0px;
+  animation: .2s ease 0s 1 popupFullAnim;
+}
+
+@keyframes popupFullAnim {
+    0% {transform: translate(-50%, -50%) scale(.92); opacity: .9;}
+    100% {transform: translate(-50%, -50%) scale(1); opacity: 1;}
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 5px 20px;
+  display: inline-block;
+  transition: .3s;
+  border-radius: 6px;
+  user-select: none;
+  letter-spacing: .3px;
+}
+
+.button:hover {
+  background-color: rgba(150, 150, 150, .1) !important;
+  border: 1px solid rgb(0, 0, 0, 0) !important;
+}
+
+.button:active {
+  background-color: rgba(150, 150, 150, .2) !important;
+  border: 1px solid rgb(0, 0, 0, 0) !important;
+}
+
+.buttonSection {
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 5px 20px;
+  display: inline-block;
+  transition: .3s;
+  border-radius: 3px;
+  user-select: none;
+  letter-spacing: .3px;
+}
+
+.buttonSection:hover {
+  background-color: rgba(150, 150, 150, .1) !important;
+}
+
+.buttonSection:active {
+  background-color: rgba(150, 150, 150, .2) !important;
+}
+
+.disableOrder {
+  background-color: rgba(100, 100, 100, 0) !important;
+  color: rgba(100, 100, 100, .3) !important;
+  cursor: auto;
+}
+.disableOrder:hover {
+  background-color: rgba(100, 100, 100, 0) !important;
+  color: rgba(100, 100, 100, .3) !important;
+}
+.disableOrder:active {
+  background-color: rgba(100, 100, 100, 0) !important;
+  color: rgba(100, 100, 100, .3) !important;
+}
+
+.buttonFullScreen {
+  background-color: rgb(0, 0, 0, .4);
+  border: 0;
+  cursor: pointer;
+  padding: 5px 20px;
+  display: inline-block;
+  transition: .3s;
+  border-radius: 3px;
+  user-select: none;
+}
+
+.buttonFullScreen:hover {
+  background-color: rgb(0, 0, 0, .5) !important;
+}
+
+.buttonFullScreen:active {
+  background-color: rgb(0, 0, 0, .6) !important;
+}
+
+.addElemBut {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 25px;
+  height: 70px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(150, 150, 150, .2);
+  padding: 0;
+}
+
+.addElemBut:hover {
+  border: 1px solid rgb(200, 200, 200, 0);
+}
+
+.addElemBut:active {
+  border: 1px solid rgb(200, 200, 200, 0);
+}
+
+input[type="color"]{
+    border-radius: 4px;
+    height: 25px;
+    width: 60px;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    background-color: var(--primary);
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 4px;
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch {
+  border-color: transparent;
+}
+
+#dragRoot ul {
+  list-style-type: none;
+  background-color: var(--primary);
+  color: rgb(225, 225, 225, .7);
+  padding-left: 12px;
+}
+
+.hover {
+  border: 0;
+  cursor: pointer;
+  padding: 5px 5px;
+  transition: .3s;
+  border-radius: 3px;
+  background-color: #141B24;
+}
+
+#windowOrderElements ul, #contTreeViewSectionOut ul {
+  list-style-type: none;
+  background-color: var(--primary);
+  color: rgb(225, 225, 225, .7);
+  padding-left: 23px;
+  font-size: 13px;
+}
+
+.iconMenu {
+  font-size: 17px;
+  font-family: Material Icons;
+  padding-right: 2px;
+  position: relative;
+  top: 4px;
+}
+
+#windowOrderElements li, #contTreeViewSectionOut li {
+  float: left;
+  clear: left;
+}
+
+#windowOrderElements .li, #contTreeViewSectionOut .li {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 2px 5px 5px;
+  display: inline-block;
+  transition: .2s;
+  border-radius: 6px;
+}
+
+#windowOrderElements .li:hover, #contTreeViewSectionOut .li:hover {
+  background-color: rgba(150, 150, 150, .1) !important;
+}
+
+#windowOrderElements .li:active, #contTreeViewSectionOut .li:active {
+  background-color: rgba(150, 150, 150, .2) !important;
+}
+
+#windowOrderElements .liSection, #contTreeViewSectionOut .liSection {
+  background-color: rgba(251, 133, 0, .2);
+  border: 0;
+  cursor: pointer;
+  padding: 2px 5px 5px;
+  display: inline-block;
+  transition: .2s;
+  border-radius: 3px;
+}
+
+#windowOrderElements .liSection:hover, #contTreeViewSectionOut .liSection:hover {
+  background-color: rgba(251, 133, 0, .3) !important;
+}
+
+#windowOrderElements .liSection:active, #contTreeViewSectionOut .liSection:active {
+  background-color: rgba(251, 133, 0, .4) !important;
+}
+
+.drag-hover {
+  background-color: rgba(150, 150, 150, .1) !important;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.caret::before {
+  font-size: 17px;
+  font-family: Material Icons;
+  content: "expand_more";
+  display: inline-block;
+  margin-right: 0px;
+  /* margin-left: 6px; */
+  position: relative;
+  top: 4px;
+  margin-top: -4px;
+}
+
+.caret-down::before {
+  transform: rotate(270deg);
+}
+
+.nested {
+  display: block;
+}
+
+.active {
+  display: none;
+}
+
+/* checkbox */
+
+.checkboxClass {
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkboxClass + label::after{
+  color: rgb(255, 255, 255, .5);
+  font-size: 13px;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  content: var(--contentCheck);
+  margin-top: 2px;
+}
+
+.checkboxClass + label::before{
+  vertical-align: middle;
+  color: rgb(255, 255, 255, .5);
+  font-family: Material Icons;
+  content: "check_box_outline_blank";
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.checkboxClass:checked + label::before{
+  vertical-align: middle;
+  color: var(--secondary);
+  font-family: Material Icons;
+  content: "check_box";
+  font-size: 20px;
+}
+
+.table {
+  overflow: hidden;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30px;
+  font-size: 14px;
+  border-collapse: separate;
+  border-spacing: 0px 1em;
+  border: 0px;
+  user-select: none;
+}
+
+.table td, .table th {
+  padding: 9px;
+  border: 0;
+}
+
+.table tr{
+  background-color: rgb(150, 150, 150, .1);
+  transition: .3s;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.table tr:hover {
+  background-color: rgb(150, 150, 150, .1) !important;
+  box-shadow: none !important;
+}
+
+.table tr:active {
+  background-color: rgba(150, 150, 150, .2) !important;
+}
+
+.sectionClass {
+  display: flex;
+  flex-grow: 1;
+  outline: 1px dashed rgb(0, 0, 0, .5);
+  overflow: hidden;
+}
+
+.sectionClass > div{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.rowClass {
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+#drop_zone {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: calc(100% - 65px);
+  display: none;
+}
+
+.inlineAdd {
+   width: 90%;
+   margin-left: 5%;
+   text-align: left;
+   overflow: auto;
+   user-select: none;
+}
+
+#searchElemText {
+  cursor: pointer;
+  background-color: rgb(200, 200, 200, .1);
+  border: 2px dashed rgb(255, 255, 255, 0);
+}
+
+#searchElemText:hover {
+  background-color: rgb(255, 255, 255, .1);
+}
+
+#searchElemText:active {
+  background-color: rgb(255, 255, 255, .2);
+}
+
+.hide{
+  display:none;
+}
+
+.emptySection {
+  width: calc(100% - 36px);
+  height: calc(100% - 26px);
+  margin: 10px 10px 10px 10px;
+  border: 2px solid #CECECE;
+  color: #C8C8C8;
+  text-align: center;
+  font-family: Material Icons;
+  font-size: 25px;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.emptySection:hover {
+  background-color: #F4F4F4 !important;
+}
+
+.emptySection:active {
+  background-color: #EAEAEA !important;
+}
+
+.outerDiv {
+  text-align: var(--align-desktop);
+}
+.outerDiv-mobile {
+  text-align: var(--align-mobile);
+}
+
+.previewStructure {
+  height: 50px;
+  background-color: rgb(200, 200, 200, .4);
+  border-radius: 4px;
+  transition: .2s;
+  flex-grow: 1;
+  margin: 0 1.5px;
+}
+
+.linkText {
+  color: rgb(255, 255, 255, .4);
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+  transition: .2s;
+  display: inline-block;
+  text-decoration: none;
+}
+.linkText:hover {
+  color: rgb(255, 255, 255, .5);
+}
+.linkText:active {
+  color: rgb(255, 255, 255, .6);
+}
+
+.dragProva {
+  background-color: red !important;
+}
+
+.faviconProject {
+   background-image: url("favicon.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   cursor: pointer;
+   transition: .3s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
+ }
+
+.faviconProject:hover > label {
+  transition: .3s;
+  font-family: Material Icons;
+  display: inline-block !important;
+  font-size: 22px;
+  color: rgb(255, 255, 255, .8) !important;
+  cursor: pointer;
+}
+
+.faviconProject:hover {
+  box-shadow: inset 10000px 0px 0px 0px rgb(0, 0, 0, .5);
+}
+
+.templateSelect {
+  cursor: pointer;
+  transition: .3s;
+  margin: 5px 0 10px;
+  user-select: none;
+}
+
+.templateSelect:hover > .imagePreview {
+  transition: .2s;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .3) !important;
+}
+
+.galleryImage {
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0) !important;
+}
+.galleryImage:hover {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .2) !important;
+}
+.galleryImage:active {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .4) !important;
+}
+
+b, i, u, strike {
+  pointer-events: none;
+}
+
+.includes {
+  width: 100%;
+  pointer-events: none;
+}
+
+.fixed {
+  position: fixed;
+  width: calc(100% - 1px);
+  top: 0;
+  z-index: 1000;
+}
+
+.floatingDelete {
+  position: fixed;
+  bottom: 15px;
+  left: 10px;
+  padding: 13px;
+  background-color: rgb(255, 0, 0, .1);
+  border: 2px dashed rgb(255, 0, 0, 1);
+  z-index: 10000;
+  border-radius: 900px;
+}
+
+.selectColor {
+  height: 30px;
+  width: 30px;
+  border-radius: 6px;
+  margin: 7px 0px 3px 7px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.selectColor:hover {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .2) !important;
+}
+
+.selectColor:active {
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, .4) !important;
+}
+
+.contextMenu {
+  transition: .2s;
+  cursor: pointer;
+  user-select: none;
+  min-width: 150px;
+}
+
+.contextMenu:hover {
+  background-color: rgb(0, 0, 0, .2);
+}
+
+.contextMenu:active {
+  background-color: rgb(0, 0, 0, .3);
+}
